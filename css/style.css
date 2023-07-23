@@ -1,0 +1,124 @@
+body{
+    background-color: #f7ecde;
+    ::selection {
+
+        background-color : #fec260;
+    }
+}
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    color: #352e28;
+    line-height: 60px;
+    font-weight: 500;
+    display: inline-block; 
+}
+h1::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    left: 0;
+    bottom: 10px;
+    background-color: #fec260;
+    transition: all 0.5s;
+    z-index: -1;
+    box-sizing: border-box;
+}
+h1:hover::before{
+    height: 50%;
+}
+.dots{
+    border-bottom:#352e28 dotted 2px;
+    margin-bottom: 0;
+}
+h2{
+    font-family: 'Righteous', cursive;
+    font-size: 25px;
+    background-image: linear-gradient(to right, #3ca55c, #efd911);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 30px;
+    font-weight: 500;
+}
+.font{
+    font-family: 'PT Sans Caption', sans-serif;
+    line-height: 16px;
+    color: #352e28;
+    font-weight: 600;
+}
+.form-control:focus {
+    border-color: #d99c39;
+    box-shadow: 0 0 0 0.25rem #fec26055;
+}
+form .btn{
+    background-color: #d1512d ;
+    border-color:#d1512d ;
+    transition: all 0.5s ;
+}
+form .btn:active{
+    background-color: #d1512d !important;
+}
+form button:hover{
+    background-color: #bb4120 !important;
+    border-color:#a03315 !important;
+}
+.visit
+{
+    background-color: #9eb23b;
+    color: white;
+}
+.visit:hover{
+    background-color: #6e8018;
+    color: white;
+}
+.delete
+{
+    background-color: #eb1d36;
+    color: white;
+}
+.delete:hover{
+    background-color: #ba081d;
+    color: white;
+}
+.circles div{
+    width: 20px;
+    height: 20px;
+}
+.color1{
+    background-color:  #f15f5d;
+}
+.color2{
+    background-color:  #febe2e;
+}
+.color3{
+    background-color:  #4db748;
+}
+.body-alert p{
+    font-family: "Bree Serif", serif;
+    font-size: 21px;
+    line-height: 1.3;
+    color: #352e28;
+}
+.test p {
+    font-family: 'PT Sans Caption', sans-serif;
+    color: #212529;
+    font-size: 18px;
+    line-height: 27px;
+    padding-top: 10px;
+} 
+.btn-close:focus{
+    box-shadow: 0 transparent !important;
+}
+.alert{
+    position: absolute;
+    top: 15%;
+}
+@media (max-width: 480px) {
+    .delete i{
+     display: none;
+    }
+    .visit i{
+        display: none;
+       }
+  }
